@@ -1,0 +1,21 @@
+<% include _header %>
+
+<form action="/auth/register" method=POST>
+  <div class="form-group">
+    <input class="form-control" type="text" name="username"
+      placeholder="Username" required autofocus>
+  </div>
+  <div class="form-group">
+    <input class="form-control" type="password" name="password"
+      placeholder="Password" required>
+  </div>
+  <div class="form-group">
+    <input class="form-control" type="password" name="password1"
+      placeholder="Re-enter password" required>
+  </div>
+  <div class="form-group">
+    <input class="btn btn-primary btn-block" type="submit" value="Register account">
+  </div>
+</form>
+
+<% include _footer %>
